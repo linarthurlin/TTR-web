@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="icon" href="\static\elements\icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css"  href="/stylesheets/footer.css">
+    <link rel="stylesheet" type="text/css"  href="/stylesheets/img-gallery.css">
+    <link rel="stylesheet" type="text/css"  href="/stylesheets/glowing-btn.css">
+    <!-- <link rel="stylesheet" type="text/css"  href="/stylesheets/brand-ani.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        section.heroheader{
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            padding-bottom: 100%;
+        }
+        .background-section1{
+            height: 800px;
+            background-image: url(\\static\\elements\\frontpage-1.png);
+            background-repeat: no-repeat;
+            /* background-position-x: center; */
+            background-position: center;
+            background-size: cover;
+            /* box-shadow: inset 0 0 50px 40px rgba(0, 0, 0, 1); */
+            box-shadow: inset 0 0 50px 40px #101012;
+            z-index: 1;
+            position: relative;
+        }
+        .background-section2{
+            padding-top: 100px;
+            height: 100%;
+            min-height: 500px;
+            background-color: #101012;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: cover;
+            z-index: 2;
+            position: relative;
+        }
+        .background-section3{
+            padding-top: 100px;
+            height: 1000px;
+            background-image: url(\\static\\elements\\frontpage-2.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: cover;
+            z-index: 3;
+            /* box-shadow: inset 0 0 50px 40px rgba(0, 0, 0, 1); */
+            box-shadow: inset 0 0 50px 40px #101012;
+            position: relative;
+        }
+    </style>
+    
+    <style>
+        div.container {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .hero-margin {
+            padding-left: 0px;
+            padding-top: 0px;
+            margin-left: 0px;
+        }
+        .navbar-brand {
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+        .nav-link {
+            color: chartreuse !important;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .nav-link:hover {
+            color:aliceblue !important;
+            border-bottom:  2px solid aliceblue;
+        }
+        .fade-in {
+            opacity: 0;
+            transition: opacity 5s linear;
+        }
+
+        ::-webkit-scrollbar{
+            width: 4px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-track{
+            background-color: black !important;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(250, 250, 250, 0.7);
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: transparent;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    </style>
+    <script>
+        function isElementInView(element) {
+        var bounding = element.getBoundingClientRect();
+        return (
+            bounding.top >= 0 &&
+            bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+        }
+
+        function handleScroll() {
+        var elements = document.getElementsByClassName('fade-in');
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            if (isElementInView(element)) {
+            element.style.opacity = 1;
+            }
+        }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+    
+</head>
+<body>
+<section class="intro background-section1">
+    <div class="container-fluid" style="padding-right: 0%; padding-left: 0px;">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-left: 0px; padding-right: 0px;">
+            <div class="container-fluid" style="padding-left: 0px;">
+
+            <!-- LOGO -->
+            <a class="navbar-brand " href="/home">
+                <img src="\static\elements\TTR-logo.png" style="height:100px;" alt="logo">
+            </a>
+
+            <!-- navitems -->
+            <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav" style="padding-right: 50px;">
+                    
+                <li class="nav-item me-lg-9">
+                    <a class="nav-link fw-light" aria-current="page" href="/research">研究發展</a>
+                </li>
+                <li class="nav-item me-lg-9">
+                    <a class="nav-link fw-light" aria-current="page" href="/members">團隊成員</a>
+                </li>
+                <li class="nav-item me-lg-9">
+                    <a class="nav-link fw-light" aria-current="page" href="/sponsors">贊助商</a>
+                </li>
+                
+                </ul>
+            </div>
+            
+            </div>
+        </nav>
+    </div>
+    <div class="justify-content-start " style="padding-top: 5%; padding-left: 5%; padding-right: 50%;">
+        <div class="col-xl-7" style="margin-top: 10%; background-color: rgba(125, 125, 125, 0.6); height: 90px;">
+            <h1 class="text-justify" style="margin: 0%"><strong style="color: white;">堅定自我 追求卓越</strong></h1>
+            <p class="text-justify"><strong style="color: white; font-size:x-large;">It's More Than Engineering</strong></p>
+        </div>
+    </div>
+
+</section>
+
+<section class="background-section2">
+    <div class="justify-content-start" style="padding: 20px;">
+        <div class="col-xl-7">
+            <h1 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.7);">Formula Student Taiwan</strong></h1>
+            <h2 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.5);">2022 8/22~8/23</strong></h2>
+        </div>
+    </div>
+
+    
+    <div class="gallery" style="justify-content: center; padding: 50px;">
+        <div class="gallery__column">
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/1.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/2.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/3.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/4.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/5.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/6.jpg" class="gallery__image">
+                </figure>
+            </a>
+        </div>
+        
+        <div class="gallery__column">
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/7.jpg" class="gallery__image">
+                </figure>
+            </a>
+            
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/8.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/9.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/10.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/11.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/12.jpg" class="gallery__image">
+                </figure>
+            </a>
+        </div>
+        
+        <div class="gallery__column">
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/13.jpg" class="gallery__image">
+                </figure>
+            </a>
+            
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/14.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/15.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/16.jpg"class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/17.jpg" class="gallery__image">
+                </figure>
+            </a>
+
+            <a target="_blank" class="gallery__link">
+                <figure class="gallery__thumb">
+                    <img src="/images-gallery/18.jpg" class="gallery__image">
+                </figure>
+            </a>
+        </div>
+        
+</div>
+</section>
+
+<section class="background-section3">
+    <div class="justify-content-start" style="padding: 50px">
+        <div class="col-xl-7">
+            <h1 class="fade-in"><strong style="color: rgba(255, 255, 255, 1);">臺科大賽車隊 首屆成員</strong></h1>
+            <h2 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.8);">參與 FST 台灣聯賽</strong></h2>
+        </div>
+    </div>
+</section>
+
+<section class="background-section2">
+    <div class="justify-content-start" style="padding: 50px;">
+        <div class="col-xl-7">
+            <h1 class="fade-in"><strong style="color: chartreuse;">Next~~</strong></h1>
+            <h1 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.7);">Formula Student Taiwan</strong></h1>
+            <h2 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.5);">2023 7/16~8/18</strong></h2>
+        </div>
+    </div>
+</section>
+
+<section class="background-section2">
+    <div class="justify-content-start" style="padding: 50px;">
+        <div class="col-xl-7">
+            <h1 class="fade-in"><strong style="color: chartreuse;">Next~~</strong></h1>
+            <h1 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.7);">Formula SAE Japan</strong></h1>
+            <h2 class="fade-in"><strong style="color: rgba(255, 255, 255, 0.5);">2023 8/28~9/2</strong></h2>
+        </div>
+    </div>
+</section>
+
+<section class="background-section2">
+    <div class="justify-content-start" style="padding: 50px; height: 200px;">
+        <div class="col-xl-7">
+            <h1 class="fade-in"><strong style="color: white;">與我們一起追逐夢想</strong></h1>
+            <button class='glowing-btn'><span class='glowing-txt'>J<span class='faulty-letter'>O</span>IN</span></button>
+            <script>
+                const button = document.querySelector('.glowing-btn');
+                button.addEventListener('click', function() {
+                window.open('https://www.youtube.com/', '_blank');
+                });
+            </script>
+
+            <!-- <ul>
+                <li class="brand-ani"><a href="#"><i class="fa-brands fa-facebook facebook"></i></a></li>
+                <li class="brand-ani"><a href="#"><i class="fa-brands fa-instagram instagram"></i></a></li>
+            </ul> -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-6 col-md-3 d-flex align-items-center justify-content-center">
+            <div class="logo-column">
+                <img src="\static\elements\icon.png" alt="icon">
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6" style="padding-left: 10%;">
+          <h6>About Us</h6>
+          <p class="text-justify">106335 臺北市大安區基隆路 4 段 43 號 國際大樓 809-2<hr>International Building F.-809-2, No.43, Keelung Rd., Sec.4, Da'an Dist., Taipei City 106335, Taiwan (R.O.C.)</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Links</h6>
+          <ul class="footer-links">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/research">Research</a></li>
+            <li><a href="/members">Members</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by 
+       <a href="/home">Taiwan Tech Racing</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/NTUSTFormulaRacing/"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="instagram" href="https://www.instagram.com/taiwan_tech_fsteam/"><i class="fab fa-instagram"></i></a></li>
+            <!-- <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>    -->
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+</html>
